@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+  
+.container-card {
+    position: relative;
+}
+
+
+.card {
+    width: 400px;
+    height: 600px;
+    background: pink;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.image-zoom {
+    width: 100%;
+    height: 100%;
+    background-image: url('oim.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+}
+
+.bloc-focus-top, .bloc-focus-bottom {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+}
+.bloc-focus-top {
+    background: #F9CD08;
+    top: 0;
+    left: 0;
+}
+.bloc-focus-bottom {
+    background:#DB1212; 
+    bottom: 0;
+    right: 0;
+}   
+
+.bloc-content-show {
+
+    font-family: rye;
+    display: grid;
+    grid-template-column: 1fr 1fr;
+    width: 100%;
+    height: 160px;
+    /*background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));*/
+    background-image: linear-gradient(90deg, rgb(237, 237, 237),rgb(236, 236, 236)),linear-gradient(135deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%),linear-gradient(112.5deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%),linear-gradient(90deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%); background-blend-mode:overlay, overlay, overlay, normal;
+    /*background: radial-gradient(ellipse at center, #443501 0%,#000000 100%);*/
+    opacity:0.6;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    color: #f2f2f2;
+    padding: 15px;
+    transform: translateY(200px);
+}
+
+.bloc-content-show h2 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: Peru;
+    opacity:1;
+
+
+}
+/*.bloc-content-show h2 ::first-letter {
+    color: saddlebrown;
+    opacity:1;
+}*/
+
+
+.out{
+    margin-bottom:22px ;
+    color: Peru;
+    opacity:1;
+    background-color:#DB1212;
+    /*display: flex;*/
+    justify-content: center;
+    font-size: 15px;
+}
+
+.in{
+    margin-bottom:2px ;
+    color: Peru;
+    opacity:1;
+    background-color:#DB1212;
+    /*display: flex;*/
+    justify-content: center;
+    font-size: 15px;
+}
+.bloc-content-show hr {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    border-color: white;
+    opacity:1;
+    
+}
+
+.bloc-content-show p span {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    opacity:1;
+    text-decoration-line:overline;
+}
+
+button{
+    background-color: white ;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font: Avantgarde;
+   
+}
+
+.bloc-content-show h2{
+    color: white;
+}

@@ -1,0 +1,105 @@
+@media screen {
+	
+
+	html,
+	body {
+		margin: .75em 1%;
+		font-family: Arial, Helvetica, sans-serif;
+	    background-color: lightgray;
+	    text-align: center;
+	}
+
+	body>header {
+		font-size: 3em;
+		font-weight: bold;
+		color: blue;
+		margin-bottom: 1em;
+	}
+
+
+	#formation>header,
+	#expe>header,#compétences {
+		position: relative;
+		font-size: 2em;
+		margin-left: 14%;
+		margin-right: 14%;
+		padding: 0.7%;
+		font-weight: bold;
+		color: white;
+		background-color: teal;
+	}
+	
+	#formation table{
+		margin: auto;		
+	}
+
+	#formation table th {
+		text-align: left;
+		font-size: 1.2em;
+	}
+	
+	ul{
+        list-style-type: none;
+      }
+
+	li{
+	   font-size:15px;
+	}
+
+
+	.maj{
+		font-size:12px;
+	}
+
+	.image-clignote  {
+	   animation-duration: 1.6s;
+	   animation-name: clignoter;
+	   animation-iteration-count: infinite;
+	   transition: none;
+	}
+	@keyframes clignoter {
+	  0%   { opacity:1; }
+	  40%   {opacity:0; }
+	  100% { opacity:1; }	
+}
+ 
+.red{
+	color: darkgreen;
+}
+
+
+/*------------------------------------------*/
+
+@media screen and (max-width:399px) {
+	body {
+		font-size: 10px;
+		position: relative;
+	}
+
+	body>header {
+		display: block;
+		width: 60%;
+		margin-bottom: 0.5em;
+	}
+	
+
+    #formation>header,
+	#expe>header, #compétences {
+		position: relative;
+		font-size: 2em;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.7%;
+		font-weight: bold;
+		color: white;
+		background-color: teal;
+	}
+
+	
+	#expe h1,
+	#divers h2 {
+		position: relative;
+	}
+
+}
+ 
